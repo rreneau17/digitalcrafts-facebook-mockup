@@ -1,0 +1,83 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+  
+html, body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif
+  }
+
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(50, 87, 145);
+    color: white;
+}
+
+header img {
+    width: 63px;
+    height: 46px;
+    margin: auto;
+}
+
+.main_wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: lightgrey;
+}
+
+.user_status {
+    background-color: white;
+    margin-top: 5px;
+     
+}
+
+.user_status_bar {
+    display: flex;
+    flex-direction: row;
+}
+
+img.status_icons {
+    float: left;
+    width: 100px;
+    height: 30px;
+    margin: auto;
+}
+
+img.profile_pic {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    float: left;
+    clear: left;
+    margin: 10px;
+}
+
+p.post_text {
+    padding: 28px;
+}
+
+.user_post {
+    background-color: white;
+    margin-top: 5px;
+}
+
+p.post_content {
+    font-size: 1.1rem;
+    clear: both;
+    margin: 10px;
+}
